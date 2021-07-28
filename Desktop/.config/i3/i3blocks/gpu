@@ -1,0 +1,64 @@
+#!/usr/bin/python
+
+# Author: 3urobeat (https://github.com/HerrEurobeat)
+# Description: Gets the utilization (load), temperature & vram usage from nvidia-settings to be used with i3blocks. Supports warn and crit colors.
+#
+# Usage: Call file with -f flag and provide format in a string. The script will replace the keywords in your format string with the corresponding values.
+#        Provide the lwarn and or lcrit flag with a number to change the color of the load and vram output.
+#        Provide the twarn and or tcrit flag with a number to change the color of the temperature output.
+#
+# Disclaimer: Your i3block needs to include 'markup=pango' and the font you are using when calling the bar in your i3 config needs to be prefixed with 'pango:' for the colors to work!
+#
+# Example: ./gpu -f "GPU: {load} {temp} VRAM: {vram}"    ...will result in: "GPU: 34% 39°C VRAM: 17%"
+
+# I wanted to do this as a simple shell script but I'm too stupid
+
+import os
+import sys
+
+# get flags and set defaults
+if "-f" not in sys.argv: format = "LOAD {load} TEMP {temp} VRAM {vram}"
+else: format = str(sys.argv[sys.argv.index("-f") + 1])
+
+if "-lwarn" not in sys.argv: loadwarn = "9999"
+else: loadwarn = str(sys.argv[sys.argv.index("-lwarn") + 1])
+
+if "-lwarn" not in sys.argv: loadcrit = "9999"
+else: loadcrit = str(sys.argv[sys.argv.index("-lcrit") + 1])
+
+if "-lwarn" not in sys.argv: tempwarn = "9999"
+else: tempwarn = str(sys.argv[sys.argv.index("-twarn") + 1])
+
+if "-lwarn" not in sys.argv: tempcrit = "9999"
+else: tempcrit = str(sys.argv[sys.argv.index("-tcrit") + 1])
+
+# get load and temperature from 'nvidia-settings'
+loadresult = os.popen("nvidia-settings -q GPUUtilization -t").read() # output: "graphics=27, memory=13, video=0, PCIe=2"
+tempresult = os.popen("nvidia-settings -q GPUCoreTemp -t").read() # output: "39\n39"
+
+# retrieve values from response and add unit
+graphicsload = str(loadresult.split(", ")[0].replace("graphics=", "")) + "%" # output after splitting: ['graphics=27', 'memory=12', 'video=0', 'PCIe=3\n']
+vramload     = str(loadresult.split(", ")[1].replace("memory=", "")) + "%"
+temp         = str(tempresult.split("\n")[0]) + "°C" # output after splitting: ['39', '39', '']
+
+# adjust colors
+valueformat = '<span color="{}">{}</span>' # needs pango font prefix to display correctly
+cwarn = "#FFFC00" # yellow
+ccrit = "#FF0000" # red
+
+if graphicsload >= loadcrit: graphicsload = valueformat.format(ccrit, graphicsload)
+elif graphicsload >= loadwarn: graphicsload = valueformat.format(cwarn, graphicsload)
+
+if vramload >= loadcrit: vramload = valueformat.format(ccrit, vramload)
+elif vramload >= loadwarn: vramload = valueformat.format(cwarn, vramload)
+
+if temp >= tempcrit: temp = valueformat.format(ccrit, temp)
+elif temp >= tempwarn: temp = valueformat.format(cwarn, temp)
+
+# replace words in format with values
+format = format.replace("{load}", graphicsload)
+format = format.replace("{vram}", vramload)
+format = format.replace("{temp}", temp)
+
+# print result
+print(format)
