@@ -216,7 +216,11 @@ exec_always feh --bg-scale /home/tomg/Pictures/wallpaper.jpg
 # Bind flameshot to mod+print
 bindsym $mod+Print exec flameshot gui
 
+# Bind mod+shift+v to clipmenu
+bindsym $mod+shift+v exec clipmenu
+
 # Autostart some apps
 exec spotify
 exec discord
 exec steam
+exec clipmenud
