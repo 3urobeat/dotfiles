@@ -201,6 +201,9 @@ bar {
 # Bind i3lock to mod+shift+x and give it a black background color
 bindsym $mod+shift+x exec i3lock --color "#000000"
 
+# Hide i3 window titles but keep small border to indicate focused window
+font pango:DejaVu Sans Mono 0
+
 # Disable tiling color border on the screen edge
 hide_edge_borders both
 
