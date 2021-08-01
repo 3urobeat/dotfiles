@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Author: 3urobeat (https://github.com/HerrEurobeat)
+# Description: Shows the current master volume from amixer. Scroll up/down to change volume. Middle click to mute.
+
+# change volume on interaction
+if [[ $BLOCK_BUTTON -eq 2 ]]; then
+    amixer -q sset Master toggle
+elif [[ $BLOCK_BUTTON -eq 4 ]]; then # volume up when scrolling up
+    amixer -q sset Master 2%+
+elif [[ $BLOCK_BUTTON -eq 5 ]]; then # volume down when scrolling down
+    amixer -q sset Master 2%-
+fi
+
+# get output from amixer
+AMIXER=$(amixer get Master | tail -n 1) # get last line of amixer output
+
+# show either volume or mute
+if [[ $AMIXER =~ "[on]" ]]; then # check if channel is muted by checking if line contains the word "on"
+    IFS=' ' read -ra args <<< "$AMIXER" # split string
+
+    VOL="${args[4]:1:-1}" # get 4th argument (the volume) from the string we just split and remove the first and last argument (square brackets)
+    
+    echo $VOL
+    echo $VOL
+else
+    echo "mute"
+    echo "mute"
+fi
