@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+
+# Author: 3urobeat (https://github.com/HerrEurobeat)
+# Description: Gets the amount of available package updates (+AUR). Click the block to see which packages can be updated (notification).
+# Disclaimer: Needs 'checkupdates+aur' package from the AUR to work.
+
+# send notification before checking when clicked so the user knows the click was recognized
+if [[ $BLOCK_BUTTON -eq 1 ]]; then
+    $(notify-send checkupdates "Checking available updates...")
+fi
+
+PACKAGES=$(checkupdates)
+COUNT=$(echo "$PACKAGES" | wc -l) # quotes around var preserves new lines
+
+echo $COUNT
+echo $COUNT
+
+# show notification with updateable packages when clicked
+if [[ $BLOCK_BUTTON -eq 1 ]]; then
+    $(notify-send checkupdates "$PACKAGES")
+fi
