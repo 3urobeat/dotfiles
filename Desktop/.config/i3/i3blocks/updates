@@ -10,12 +10,25 @@ if [[ $BLOCK_BUTTON -eq 1 ]]; then
 fi
 
 PACKAGES=$(checkupdates)
-COUNT=$(echo "$PACKAGES" | wc -l) # quotes around var preserves new lines
 
-echo $COUNT
-echo $COUNT
+# check if no updates were found so that 'wc -l' doesn't respond with '1'
+if [[ $PACKAGES == "" ]]; then
+    echo 0
+    echo 0
+else
+    COUNT=$(echo "$PACKAGES" | wc -l) # quotes around var preserves new lines
+
+    echo $COUNT
+    echo $COUNT
+fi
 
 # show notification with updateable packages when clicked
 if [[ $BLOCK_BUTTON -eq 1 ]]; then
-    $(notify-send checkupdates "$PACKAGES")
+
+    # show different message if no updates were found
+    if [[ $PACKAGES == "" ]]; then
+        $(notify-send checkupdates "No available updates found.")
+    else
+        $(notify-send checkupdates "$PACKAGES")
+    fi
 fi
