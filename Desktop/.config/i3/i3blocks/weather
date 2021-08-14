@@ -30,32 +30,18 @@ WEATHER_TEMP=$(echo "${WEATHER_INFO}" | grep -o -e '\"temp\":\-\?[0-9]*' | awk -
 
 if [[ "${WEATHER_MAIN}" = *Snow* ]]; then
   echo "${ICON_SNOW} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo "${ICON_SNOW} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo ""
 elif [[ "${WEATHER_MAIN}" = *Rain* ]] || [[ "${WEATHER_MAIN}" = *Drizzle* ]]; then
   echo "${ICON_RAINY} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo "${ICON_RAINY} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo ""
 elif [[ "${WEATHER_MAIN}" = *Thunderstorm* ]]; then
   echo "${ICON_STORM} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo "${ICON_STORM} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo ""
 elif [[ "${WEATHER_MAIN}" = *Cloud* ]]; then
   echo "${ICON_CLOUDY} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo "${ICON_CLOUDY} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo ""
 elif [[ "${WEATHER_MAIN}" = *Clear* ]]; then
   echo "${ICON_SUNNY} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo "${ICON_SUNNY} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo ""
 elif [[ "${WEATHER_MAIN}" = *Fog* ]] || [[ "${WEATHER_MAIN}" = *Mist* ]]; then
   echo "${ICON_FOG} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo "${ICON_FOG} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo ""
 else
   echo "${WEATHER_MAIN} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo "${WEATHER_MAIN} ${WEATHER_TEMP}${SYMBOL_CELSIUS}"
-  echo ""
 fi
 
 if [[ "${WEATHER_TEMP}" -lt "${URGENT_LOWER}" ]] || [[ "${WEATHER_TEMP}" -gt "${URGENT_HIGHER}" ]]; then
