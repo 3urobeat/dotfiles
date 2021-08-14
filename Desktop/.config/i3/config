@@ -38,8 +38,9 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run
+# bind program launcher
+bindsym $mod+d exec dmenu_run -fn 'Futura:bold:pixelsize=12'
+#bindsym $mod+d exec rofi -show run
 
 # default keybinds for movement, focus, split and layout
 bindsym $mod+j focus left
@@ -175,6 +176,16 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# class                 border  bground text    indicator child_border
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+client.background       #F8F8F2
+
+
+# I don't use i3blocks atm but kept it in to be able to fall back easily
 # Start two bars for each monitor in order to be able to display different blocks
 bar {
         output $mon1
@@ -185,6 +196,18 @@ bar {
         separator_symbol " " # remove separator symbol to be able to set it directly in i3blocks config
 
         status_command SCRIPT_DIR=~/.config/i3/i3blocks/ i3blocks -c ~/.config/i3/i3blocks1.conf
+
+        colors {
+            background #282A36
+            statusline #F8F8F2
+            separator  #44475A
+
+            focused_workspace  #44475A #44475A #F8F8F2
+            active_workspace   #282A36 #44475A #F8F8F2
+            inactive_workspace #282A36 #282A36 #BFBFBF
+            urgent_workspace   #FF5555 #FF5555 #F8F8F2
+            binding_mode       #FF5555 #FF5555 #F8F8F2
+        }
 }
 
 bar {
@@ -196,10 +219,23 @@ bar {
         separator_symbol " "
 
         status_command SCRIPT_DIR=~/.config/i3/i3blocks/ i3blocks -c ~/.config/i3/i3blocks2.conf
+
+        colors {
+            background #282A36
+            statusline #F8F8F2
+            separator  #44475A
+
+            focused_workspace  #44475A #44475A #F8F8F2
+            active_workspace   #282A36 #44475A #F8F8F2
+            inactive_workspace #282A36 #282A36 #BFBFBF
+            urgent_workspace   #FF5555 #FF5555 #F8F8F2
+            binding_mode       #FF5555 #FF5555 #F8F8F2
+        }
 }
 
+
 # Bind i3lock to mod+shift+x and give it a black background color
-bindsym $mod+shift+x exec i3lock --color "#000000"
+bindsym $mod+shift+x exec "/home/tomg/.config/i3/i3lock-fancy-multimonitor/lock -n -b=0x8"
 
 # Hide i3 window titles but keep small border to indicate focused window
 font pango:DejaVu Sans Mono 0
@@ -223,7 +259,10 @@ bindsym $mod+Print exec flameshot gui
 bindsym $mod+shift+v exec clipmenu
 
 # Autostart some apps
-exec spotify
-exec discord
-exec steam
-exec clipmenud
+exec --no-startup-id picom
+exec --no-startup-id spotify
+exec --no-startup-id discord
+exec --no-startup-id steam
+exec --no-startup-id clipmenud
+exec --no-startup-id redshift
+# exec --no-startup-id obs --startreplaybuffer
