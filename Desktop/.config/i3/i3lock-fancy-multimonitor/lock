@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Modified by 3urobeat (21.08.2021) so that i3lock gets called with the flag -n and dunst notifications are disabled. 
+
+
 # Defaults
 
 
@@ -97,8 +100,14 @@ fi
 
 eval convert $PARAMS
 
+# suspend dunst notifications
+pkill -u "$USER" -USR1 dunst
+
 #Lock the screen:
-i3lock -i $OUTPUT_IMAGE -t
+i3lock -i $OUTPUT_IMAGE -t -n
+
+# resume dunst notifications
+pkill -u "$USER" -USR2 dunst
 
 #Remove the generated image:
 rm $OUTPUT_IMAGE

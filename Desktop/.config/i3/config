@@ -6,7 +6,7 @@
 set $mod Mod4
 
 # Hide i3 window titles but keep small border to indicate focused window
-font pango:DejaVu Sans Mono 0
+font pango:monospace 0
 
 # Add just a little bit of gaps
 gaps inner 8
