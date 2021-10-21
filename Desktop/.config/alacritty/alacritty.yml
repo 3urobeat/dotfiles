@@ -55,5 +55,13 @@ colors:
     white:   '0xe6e6d1'
 
 
+# Set more sensible window dimensions
+window:
+   dimensions:
+     columns: 95
+     lines: 25
+
+
 # Add a bit transparency
-background_opacity: 0.625
+#background_opacity: 0.625
+background_opacity: 0.75
