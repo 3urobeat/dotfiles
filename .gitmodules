@@ -1,0 +1,3 @@
+[submodule "Laptop/.themes/Dracula"]
+	path = Laptop/.themes/Dracula
+	url = https://github.com/dracula/gtk
