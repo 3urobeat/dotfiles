@@ -180,7 +180,7 @@ bar {
 
 	status_command /usr/bin/bumblebee-status \
 		-m weather updates cpu3 memory bluetooth nic traffic battery amixer datetime \
-		-p weather.showcity=false memory.usedonly=true cpu3.format="︁ {load} {temp} {fan}" cpu3.chip="thinkpad-isa-0000" bluetooth.dbus_destination_path=/org/blueman/mechanism traffic.showname=false nic.format='{ip}' battery.showpowerconsumption=true datetime.format='%a %d.%m.%y %H:%M:%S' \
+		-p weather.showcity=false memory.usedonly=true cpu3.format="︁ {load} {temp} {fan}" cpu3.chip="thinkpad-isa-0000" bluetooth.dbus_destination_path=/org/blueman/mechanism traffic.showname=false traffic.exclude='lo,virbr,docker,vboxnet,veth,br-' nic.format='{ip}' battery.showpowerconsumption=true datetime.format='%a %d.%m.%y %H:%M:%S' \
 		-t dracula-powerline
 
         colors {
@@ -230,3 +230,5 @@ bindsym $mod+shift+v exec clipmenu
 #exec --no-startup-id steam
 exec --no-startup-id clipmenud
 exec --no-startup-id redshift
+exec --no-startup-id dunst
+exec --no-startup-id nextcloud
