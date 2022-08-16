@@ -1,0 +1,29 @@
+[Added Associations]
+application/pdf=librewolf.desktop;firefox-developer-edition.desktop;
+application/x-extension-htm=librewolf.desktop;
+application/x-extension-html=librewolf.desktop;
+application/x-extension-shtml=librewolf.desktop;
+application/x-extension-xht=librewolf.desktop;
+application/x-extension-xhtml=librewolf.desktop;
+application/xhtml+xml=librewolf.desktop;
+audio/flac=vlc.desktop;
+text/html=librewolf.desktop;
+text/plain=org.kde.kate.desktop;
+x-scheme-handler/chrome=librewolf.desktop;
+x-scheme-handler/http=librewolf.desktop;
+x-scheme-handler/https=librewolf.desktop;
+
+[Default Applications]
+application/pdf=librewolf.desktop;
+application/x-extension-htm=librewolf.desktop
+application/x-extension-html=librewolf.desktop
+application/x-extension-shtml=librewolf.desktop
+application/x-extension-xht=librewolf.desktop
+application/x-extension-xhtml=librewolf.desktop
+application/xhtml+xml=librewolf.desktop
+audio/flac=vlc.desktop;
+text/html=librewolf.desktop
+x-scheme-handler/chrome=librewolf.desktop
+x-scheme-handler/http=librewolf.desktop
+x-scheme-handler/https=librewolf.desktop
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop

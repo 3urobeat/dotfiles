@@ -1,3 +1,9 @@
+font:
+  normal:
+    family: monospace
+    style: Regular
+  size: 9.5
+
 # Dracula Color Scheme - Credit: https://github.com/dracula/alacritty/blob/master/dracula.yml
 
 colors:

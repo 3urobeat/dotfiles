@@ -18,7 +18,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -174,7 +174,7 @@ client.background       #F8F8F2
 
 
 bar {
-        font pango:Font Awesome, Futura Bk Bt Bold 9
+	font pango:Ubuntu, Font Awesome 6 Brands Bold 9
 
         position top
 
@@ -214,6 +214,9 @@ bindsym XF86MonBrightnessDown exec light -U 5
 exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 exec xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
 
+# Start polkit agent
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
 # Load wallpaper (requires feh package)
 exec_always --no-startup-id feh --bg-scale /home/tomg/.config/wallpaper.jpg
 
@@ -225,9 +228,6 @@ bindsym $mod+shift+v exec clipmenu
 
 # Autostart some apps
 #exec --no-startup-id picom
-#exec --no-startup-id spotify
-#exec --no-startup-id discord
-#exec --no-startup-id steam
 exec --no-startup-id clipmenud
 exec --no-startup-id redshift
 exec --no-startup-id dunst

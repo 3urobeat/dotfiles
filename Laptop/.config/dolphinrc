@@ -1,0 +1,15 @@
+[General]
+Version=201
+ViewPropsTimestamp=2022,8,15,22,46,1.768
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[KPropertiesDialog]
+LVDS1 Height 1366x768=428
+LVDS1 Width 1366x768=399
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
