@@ -200,6 +200,12 @@ bar {
 # Bind i3lock to mod+shift+x and give it a black background color
 bindsym $mod+shift+x exec "/home/tomg/.config/i3/i3lock-fancy-multimonitor/lock -n -b=0x8"
 
+# Configure auto locking after 5 min, screen off after 7.5 min and suspend after 10 min inactivity
+#set $primary_display exec "answer=$(xrandr | awk '/ primary/{print $1}')" #could be used for dimming display first, check github.com/jD91mZM2/xidlehook#example
+
+exec --no-startup-id "xidlehook --not-when-fullscreen --not-when-audio --timer 300 '/home/tomg/.config/i3/i3lock-fancy-multimonitor/lock -n -b=0x8' '' --timer 150 'xset dpms force off' 'xset dpms force on' --timer 150 'systemctl suspend' ''"
+exec --no-startup-id "xss-lock --transfer-sleep-lock -- /home/tomg/.config/i3/i3lock-fancy-multimonitor/lock -n -b=0x8"
+
 # Disable tiling color border on the screen edge
 hide_edge_borders both
 
