@@ -1,0 +1,24 @@
+{
+    "input": {
+        "blocklist": [],
+        "pitch": {
+            "cents": 0,
+            "crispness": 3,
+            "faster": false,
+            "formant-preserving": false,
+            "input-gain": 5.9,
+            "octaves": 0,
+            "output-gain": 5.9,
+            "semitones": -8
+        },
+        "plugins_order": [
+            "pitch",
+            "rnnoise"
+        ],
+        "rnnoise": {
+            "input-gain": 0.0,
+            "model-path": "",
+            "output-gain": 0.0
+        }
+    }
+}

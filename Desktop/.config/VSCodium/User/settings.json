@@ -1,0 +1,74 @@
+{
+    "workbench.colorTheme": "Default Dark+ Experimental",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontFamily": "'Hack','monospace'",
+    "terminal.integrated.fontFamily": "monospace",
+    "eslint.alwaysShowStatus": true,
+    "eslint.lintTask.enable": true,
+    "psi-header.config": {
+		"forceToTop": true,
+		"blankLinesAfter": 2
+	},
+    "psi-header.changes-tracking": {
+        "isActive": true,
+		"modAuthor": "Modified By: ",
+		"modDate": "Last Modified: ",
+		"modDateFormat": "DD.MM.YYYY HH:mm:ss",
+		"include": [],
+		"exclude": [
+			"markdown",
+			"json",
+			"jsonc"
+		],
+        "autoHeader": "autoSave"
+    },
+    "psi-header.variables": [
+        ["author", "3urobeat"],
+        ["url", "<https://github.com/HerrEurobeat>"]
+    ],
+    "psi-header.templates": [
+        {
+            "language": "*",
+            "template": [
+                "File: <<filename>>",
+ 				"Project: <<projectname>>",
+                "Created Date: <<filecreated('DD.MM.YYYY HH:mm:ss')>>",
+				"Author: <<author>>",
+				"",
+				"Last Modified: ",
+				"Modified By: ",
+				"",
+				"Copyright (c) <<year>> <<author>> <<url>>",
+                "",
+                "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.",
+                "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.",
+                "You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>."
+            ]
+        }
+    ],
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.smoothScrolling": true,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.list.smoothScrolling": true,
+    "omnisharp.useGlobalMono": "always",
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontSize": 12,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "julia.enableTelemetry": false,
+    "psi-header.license-reference": {}
+}

@@ -1,0 +1,11 @@
+# White text
+colors:
+  primary:
+    foreground: '0xffffff'
+
+# Set more sensible window dimensions
+window:
+   dimensions:
+     columns: 95
+     lines: 25
+   opacity: 0.75
