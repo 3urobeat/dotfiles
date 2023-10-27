@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Default Dark+ Experimental",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
@@ -28,7 +27,7 @@
     },
     "psi-header.variables": [
         ["author", "3urobeat"],
-        ["url", "<https://github.com/HerrEurobeat>"]
+        ["url", "<https://github.com/3urobeat>"]
     ],
     "psi-header.templates": [
         {
@@ -70,5 +69,19 @@
     ],
     "julia.symbolCacheDownload": true,
     "julia.enableTelemetry": false,
-    "psi-header.license-reference": {}
+    "psi-header.license-reference": {},
+    "tabnine.experimentalAutoImports": true,
+    "markdown.extension.toc.updateOnSave": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "terminal.integrated.env.linux": {},
+    "console-ninja.featureSet": "Community",
+    "workbench.colorTheme": "Bluloco Dark",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
 }
