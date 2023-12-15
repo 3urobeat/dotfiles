@@ -1,5 +1,5 @@
 
-# Author: 3urobeat (https://github.com/HerrEurobeat)
+# Author: 3urobeat (https://github.com/3urobeat)
 # Description: Gets the utilization (load), temperature and cpu fan speed from 'mpstat' & 'sensors' to be used as module for bumblebee-status.
 #
 # Parameters: cpu3.format     -> The script will replace the keywords in your format string with the corresponding values. You can also simply leave out keywords to not display them. Keywords: {load}, {temp} & {fan}
@@ -25,8 +25,8 @@ class Module(core.module.Module):
         fansensor  = self.parameter("fansensor", "fan1_input")
 
         # get load and temperature
-        mpresultresult = os.popen("mpstat 2 1").read().split("\n") # output: 
-        sensorsresult  = os.popen(f"sensors -u {chip}").read().split("\n") # output: 
+        mpresultresult = os.popen("mpstat 2 1").read().split("\n") # output:
+        sensorsresult  = os.popen(f"sensors -u {chip}").read().split("\n") # output:
 
         # retrieve idle value from output, round the number, calculate load (100 - idle) and format string
         cpuaverage = mpresultresult[len(mpresultresult) - 2].split(" ")
@@ -37,13 +37,15 @@ class Module(core.module.Module):
         cputemp1in = [e for e in sensorsresult if f'{tempsensor}:' in e][0] # get temp1_input for this chip
         cputemp    = str(float(cputemp1in.replace(f"  {tempsensor}: ", "")).__round__(2)) + "°C"
 
-        fan1in = [e for e in sensorsresult if f'{fansensor}:' in e][0] # get fan1_input for this chip
-        fan    = str(int(fan1in.replace(f"  {fansensor}: ", "").split(".")[0])) + " RPM" # get fan speed from value and discard anything behind the dot
+        if "{fan}" in format: # only check if user wants to display it to prevent error when sensor does not exist
+            fan1in = [e for e in sensorsresult if f'{fansensor}:' in e][0] # get fan1_input for this chip
+            fan    = str(int(fan1in.replace(f"  {fansensor}: ", "").split(".")[0])) + " RPM" # get fan speed from value and discard anything behind the dot
+
+            format = format.replace("{fan}", fan)
 
         # replace words in format with values
         format = format.replace("{load}", cpuload)
         format = format.replace("{temp}", cputemp)
-        format = format.replace("{fan}", fan)
 
         # print result
         return format

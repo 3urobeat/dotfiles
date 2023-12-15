@@ -1,5 +1,5 @@
 
-# Author: 3urobeat (https://github.com/HerrEurobeat)
+# Author: 3urobeat (https://github.com/3urobeat)
 # Description: Gets the utilization (load), temperature & vram usage from nvidia-settings to be used as module for bumblebee-status.
 #
 # Parameter: gpu.format -> The script will replace the keywords in your format string with the corresponding values. Keywords: {load}, {temp} & {vram}

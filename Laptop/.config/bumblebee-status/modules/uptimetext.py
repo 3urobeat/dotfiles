@@ -1,5 +1,5 @@
 
-# Author: 3urobeat (https://github.com/HerrEurobeat)
+# Author: 3urobeat (https://github.com/3urobeat)
 # Description: Very simple uptime script that gets the output from 'uptime -p' for bumblebee-status.
 
 import os

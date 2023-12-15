@@ -1,5 +1,5 @@
 
-# Author: 3urobeat (https://github.com/HerrEurobeat)
+# Author: 3urobeat (https://github.com/3urobeat)
 # Description: Gets the amount of available package updates (+AUR). Click the module to see which packages can be updated (notification).
 # Disclaimer: Needs 'checkupdates+aur' package from the AUR to work.
 
