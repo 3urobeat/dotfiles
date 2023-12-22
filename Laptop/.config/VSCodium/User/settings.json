@@ -87,5 +87,6 @@
     "files.trimTrailingWhitespace": true,
     "[markdown]": {
         "files.trimTrailingWhitespace": false
-    }
+    },
+    "window.zoomLevel": -1
 }
