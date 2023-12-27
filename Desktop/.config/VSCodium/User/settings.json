@@ -1,7 +1,4 @@
 {
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.fontFamily": "'Hack','monospace'",
@@ -17,6 +14,7 @@
 		"modAuthor": "Modified By: ",
 		"modDate": "Last Modified: ",
 		"modDateFormat": "DD.MM.YYYY HH:mm:ss",
+        "updateLicenseVariables": true,
 		"include": [],
 		"exclude": [
 			"markdown",
@@ -42,12 +40,18 @@
 				"Last Modified: ",
 				"Modified By: ",
 				"",
-				"Copyright (c) <<year>> <<author>> <<url>>",
+				"Copyright (c) <<yeartoyear(fc!P, now)>> <<author>> <<url>>",
                 "",
                 "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.",
                 "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.",
                 "You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>."
             ]
+        }
+    ],
+    "psi-header.lang-config": [
+        {
+            "language": "*",
+            "replace": [ "Copyright" ],
         }
     ],
     "[css]": {
@@ -65,11 +69,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.fontSize": 12,
-    "terminal.integrated.commandsToSkipShell": [
-        "language-julia.interrupt"
-    ],
-    "julia.symbolCacheDownload": true,
-    "julia.enableTelemetry": false,
     "psi-header.license-reference": {},
     "tabnine.experimentalAutoImports": true,
     "markdown.extension.toc.updateOnSave": false,
@@ -81,11 +80,12 @@
     },
     "terminal.integrated.env.linux": {},
     "console-ninja.featureSet": "Community",
-    "workbench.colorTheme": "Bluloco Dark",
     "files.trimFinalNewlines": true,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "[markdown]": {
         "files.trimTrailingWhitespace": false
-    }
+    },
+    "cmake.showOptionsMovedNotification": false,
+    "tabby.api.endpoint": "http://127.0.0.1:7550"
 }
