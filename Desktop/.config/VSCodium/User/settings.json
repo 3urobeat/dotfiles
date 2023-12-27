@@ -6,22 +6,24 @@
     "eslint.alwaysShowStatus": true,
     "eslint.lintTask.enable": true,
     "psi-header.config": {
-		"forceToTop": true,
-		"blankLinesAfter": 2
-	},
+        "forceToTop": true,
+        "blankLinesAfter": 2,
+        "license": "Custom"
+    },
     "psi-header.changes-tracking": {
         "isActive": true,
-		"modAuthor": "Modified By: ",
-		"modDate": "Last Modified: ",
-		"modDateFormat": "DD.MM.YYYY HH:mm:ss",
+        "modAuthor": "Modified By: ",
+        "modDate": "Last Modified: ",
+        "modDateFormat": "YYYY-MM-DD HH:mm:ss",
         "updateLicenseVariables": true,
-		"include": [],
-		"exclude": [
-			"markdown",
-			"json",
-			"jsonc",
+        "include": [],
+        "exclude": [
+            "markdown",
+            "json",
+            "jsonc",
             "db"
-		],
+        ],
+        "replace": [ "Copyright" ],
         "autoHeader": "autoSave"
     },
     "psi-header.variables": [
@@ -33,26 +35,23 @@
             "language": "*",
             "template": [
                 "File: <<filename>>",
- 				"Project: <<projectname>>",
-                "Created Date: <<filecreated('DD.MM.YYYY HH:mm:ss')>>",
-				"Author: <<author>>",
-				"",
-				"Last Modified: ",
-				"Modified By: ",
-				"",
-				"Copyright (c) <<yeartoyear(fc!P, now)>> <<author>> <<url>>",
+                 "Project: <<projectname>>",
+                "Created Date: <<filecreated('YYYY-MM-DD HH:mm:ss')>>",
+                "Author: <<author>>",
                 "",
-                "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.",
-                "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.",
-                "You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>."
+                "Last Modified: ",
+                "Modified By: ",
+                "",
+                "Copyright (c) <<yeartoyear(fc!P, now)>> <<author>> <<url>>",
+                "",
+                "<<licensetext>>"
             ]
         }
     ],
-    "psi-header.lang-config": [
-        {
-            "language": "*",
-            "replace": [ "Copyright" ],
-        }
+    "psi-header.license-text": [
+        "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.",
+        "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.",
+        "You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>."
     ],
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
