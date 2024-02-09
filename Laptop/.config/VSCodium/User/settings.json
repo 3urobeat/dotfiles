@@ -79,6 +79,7 @@
     },
     "terminal.integrated.env.linux": {},
     "console-ninja.featureSet": "Community",
+    "workbench.colorTheme": "Bluloco Dark",
     "files.trimFinalNewlines": true,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
@@ -86,4 +87,5 @@
         "files.trimTrailingWhitespace": false
     },
     "cmake.showOptionsMovedNotification": false,
+    "window.zoomLevel": -1
 }
