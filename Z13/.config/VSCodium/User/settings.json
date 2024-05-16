@@ -1,0 +1,92 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontFamily": "'Hack','monospace'",
+    "terminal.integrated.fontFamily": "monospace",
+    "eslint.alwaysShowStatus": true,
+    "eslint.lintTask.enable": true,
+    "psi-header.config": {
+        "forceToTop": true,
+        "blankLinesAfter": 2,
+        "license": "Custom"
+    },
+    "psi-header.changes-tracking": {
+        "isActive": true,
+        "modAuthor": "Modified By: ",
+        "modDate": "Last Modified: ",
+        "modDateFormat": "YYYY-MM-DD HH:mm:ss",
+        "updateLicenseVariables": true,
+        "include": [],
+        "exclude": [
+            "markdown",
+            "json",
+            "jsonc",
+            "db"
+        ],
+        "replace": [ "Copyright" ],
+        "autoHeader": "autoSave"
+    },
+    "psi-header.variables": [
+        ["author", "3urobeat"],
+        ["url", "<https://github.com/3urobeat>"]
+    ],
+    "psi-header.templates": [
+        {
+            "language": "*",
+            "template": [
+                "File: <<filename>>",
+                 "Project: <<projectname>>",
+                "Created Date: <<filecreated('YYYY-MM-DD HH:mm:ss')>>",
+                "Author: <<author>>",
+                "",
+                "Last Modified: ",
+                "Modified By: ",
+                "",
+                "Copyright (c) <<yeartoyear(fc!P, now)>> <<author>> <<url>>",
+                "",
+                "<<licensetext>>"
+            ]
+        }
+    ],
+    "psi-header.license-text": [
+        "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.",
+        "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.",
+        "You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>."
+    ],
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.smoothScrolling": true,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.list.smoothScrolling": true,
+    "omnisharp.useGlobalMono": "always",
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "psi-header.license-reference": {},
+    "tabnine.experimentalAutoImports": true,
+    "markdown.extension.toc.updateOnSave": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "terminal.integrated.env.linux": {},
+    "console-ninja.featureSet": "Community",
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "cmake.showOptionsMovedNotification": false,
+    "tabby.api.endpoint": "http://127.0.0.1:7550",
+    "editor.fontSize": 12,
+    "workbench.colorTheme": "Solarized Light",
+    "window.menuBarVisibility": "toggle"
+}

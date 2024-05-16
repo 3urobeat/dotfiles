@@ -1,0 +1,120 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-bottom": 0,
+    "modules-left": [
+      "clock",
+      "hyprland/workspaces",
+    ],
+    "modules-center": [
+      "hyprland/window",
+    ],
+    "modules-right": [
+      "network",
+      "bluetooth",
+      "cpu",
+      "temperature",
+      "memory",
+      "backlight",
+      "battery",
+      "wireplumber",
+      "tray"
+    ],
+    "tray": {
+      "icon-size": 24,
+      "spacing": 10,
+      "show-passive-items": true
+    },
+    "hyprland/window": {
+      "format": " {}",
+      "rewrite": {
+      },
+      "separate-outputs": false
+    },
+    "hyprland/submap": {
+      "format": "✌️ {}",
+      "max-length": 8,
+      "tooltip": true
+    },
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "1": "󰲠",
+        "2": "󰲢",
+        "3": "󰲤",
+        "4": "󰲦",
+        "5": "󰲨",
+        "6": "󰲪",
+        "7": "󰲬",
+        "8": "󰲮",
+        "9": "󰲰",
+        "10": "󰿬",
+        "-99": "",
+        "active": "",
+        "default": ""
+      }
+    },
+    "network": {
+      "interface": "wlan0",
+      "format-wifi": "  {essid} ({signalStrength}%)",
+      "format-ethernet": "  {ipaddr}/{cidr}",
+      "format-disconnected": "  Disconnected",
+      "interval": 2,
+      "tooltip-format": " {ifname} -   {bandwidthDownBits}  {bandwidthUpBits}",
+      "on-click": "exec hyprctl dispatch exec [floating] 'alacritty -e nmtui'"
+    },
+    "bluetooth": {
+      "format-disabled": " /",
+      "format-connected": " {num_connections}",
+      "tooltip-format": "{controller_alias}\t{controller_address}",
+      "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+      "on-click": "exec blueman-manager"
+    },
+    "temperature": {
+      "format": "{icon} {temperatureC}°C",
+      "hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input",
+      "critical-threshold": 80,
+      "format-icons": ["", "", "", ""]
+    },
+    "memory": {
+      "format": " {}%",
+      "tooltip": "false"
+    },
+    "cpu": {
+      "format": " {usage}%",
+      "tooltip": "false"
+    },
+    "backlight": {
+      "device": "amdgpu_bl1",
+      "format": "  {percent}%",
+      "tooltip": false
+    },
+    "battery": {
+      "format": "{icon}  {capacity}% {power}W",
+      "format-charging": " {capacity}% {power}W",
+      "format-icons": ["", "", "", "", ""],
+      "on-click": "exec tlpui"
+    },
+    "wireplumber": {
+      "format": "{volume}% {icon}",
+      "format-bluetooth": "{volume}% {icon}",
+      "format-muted": "",
+      "format-icons": {
+          "headphone": "",
+          "hands-free": "",
+          "headset": "",
+          "phone": "",
+          "portable": "",
+          "car": "",
+          "default": ["", ""]
+      },
+      "scroll-step": 1,
+      "on-click": "helvum"
+    },
+    "clock": {
+      "format": "  {:%Y-%m-%d %H:%M:%S}",
+      "interval": 1,
+      "tooltip": false
+    }
+}

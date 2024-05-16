@@ -1,0 +1,7 @@
+[colors.primary]
+foreground = '0xffffff'
+
+[window]
+dimensions.columns = 95
+dimensions.lines = 22
+opacity = 0.75
