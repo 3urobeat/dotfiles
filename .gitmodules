@@ -1,6 +1,6 @@
-[submodule "Laptop/.themes/Dracula"]
-	path = Laptop/.themes/Dracula
+[submodule "T430/.themes/Dracula"]
+	path = T430/.themes/Dracula
 	url = https://github.com/dracula/gtk
-[submodule "Laptop/.config/i3/i3lock-fancy-multimonitor"]
-	path = Laptop/.config/i3/i3lock-fancy-multimonitor
+[submodule "T430/.config/i3/i3lock-fancy-multimonitor"]
+	path = T430/.config/i3/i3lock-fancy-multimonitor
 	url = https://github.com/guimeira/i3lock-fancy-multimonitor
