@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
 }
+
 #waybar {
   background: #1e222a;
   color: #eeeeef;
@@ -16,8 +17,7 @@
   padding: 0 5px;
   color: #eeeeef;
 }
-/* Fix: active workspace doesn't show up */
-/* #workspaces button.focused { */
+
 #workspaces button.active {
   color: #fa5aa4;
 }
@@ -46,12 +46,6 @@
 
 #battery {
   color: #1788e4;
-}
-
-#scratchpad {
-  color: #cffafe;
-  padding-right: 4px;
-  padding-left: 4px;
 }
 
 #wireplumber {

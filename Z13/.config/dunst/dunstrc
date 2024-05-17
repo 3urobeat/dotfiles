@@ -5,7 +5,7 @@
     vertical_alignment = top
     offset = 20x-5
 
-    font = Noto Sans 10
+    font = Hack Nerd Font 10
     foreground = "#ffffff"
 
     background = "#1e222a99"
@@ -26,11 +26,10 @@
     browser = /usr/bin/librewolf -new-tab
 
 [urgency_low]
-    timeout = 5
+    timeout = 7.5
 
 [urgency_normal]
-    foreground = "#dfac3f"
-    timeout = 5
+    timeout = 7.5
 
 [urgency_critical]
     background = "#df3f47cc"

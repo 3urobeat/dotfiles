@@ -5,6 +5,7 @@
     "modules-left": [
       "clock",
       "hyprland/workspaces",
+      "tray"
     ],
     "modules-center": [
       "hyprland/window",
@@ -17,8 +18,7 @@
       "memory",
       "backlight",
       "battery",
-      "wireplumber",
-      "tray"
+      "wireplumber"
     ],
     "tray": {
       "icon-size": 24,
@@ -94,7 +94,8 @@
       "format": "{icon}  {capacity}% {power}W",
       "format-charging": " {capacity}% {power}W",
       "format-icons": ["", "", "", "", ""],
-      "on-click": "exec tlpui"
+      "on-click": "exec tlpui",
+      "interval": 5
     },
     "wireplumber": {
       "format": "{volume}% {icon}",
