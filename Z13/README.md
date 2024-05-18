@@ -24,6 +24,7 @@ fprintd
 grim
 gwenview
 helvum
+htop
 hypridle
 hyprland
 hyprlock
@@ -49,6 +50,7 @@ vlc
 waybar
 wlr-randr
 wofi
+xdg-desktop-portal
 ```
 
 **Packages specific to my use case (programming, music production, ...):**
@@ -141,6 +143,9 @@ xdg-settings set default-web-browser librewolf.desktop
 &nbsp;
 
 ### Misc
+**Add user group for non-root USB access:** (needed for PlatformIO Arduino Development)  
+`sudo usermod -a -G uucp $USER`
+
 **Make blueman-manager work:**  
 `sudo systemctl enable --now bluetooth`  
 
@@ -155,3 +160,12 @@ balooctl6 suspend
 balooctl6 disable
 balooctl6 purge
 ```
+
+&nbsp;
+
+**Add TrueNAS fstab entry:**  
+Create mount point:  
+`sudo mkdir /mnt/TrueNAS`
+
+Run `sudo nano /etc/fstab` and add (replace IP and username with your values):  
+`192.168.x.x:/mnt/data/username /mnt/TrueNAS nfs defaults,noauto,user 0 0`
