@@ -9,6 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 # Env vars for theming and stuff
+export QT_QPA_PLATFORM="wayland"
 export QT_QPA_PLATFORMTHEME="qt6ct"
 #export XDG_MENU_PREFIX=arch
 

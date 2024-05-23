@@ -14,12 +14,17 @@
 }
 
 #workspaces button {
-  padding: 0 5px;
+  padding: 0 4px;
   color: #eeeeef;
 }
 
 #workspaces button.active {
   color: #fa5aa4;
+}
+
+/* Fixes white box appearing when hovering workspace icon  */
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0);
 }
 
 #tray > .passive {

@@ -2,6 +2,7 @@
 
 [global]
     monitor = 0
+    follow = keyboard
     vertical_alignment = top
     offset = 20x-5
 

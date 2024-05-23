@@ -11,6 +11,7 @@ This causes a few more dependencies to be installed than I'd like but this is a 
 **General Packages:**
 ```
 alacritty
+archlinux-xdg-menu          // Probably needed for Dolphin Open With
 ark
 blueman
 breeze
@@ -25,10 +26,12 @@ grim
 gwenview
 helvum
 htop
+hyprcursor
 hypridle
 hyprland
 hyprlock
 kate
+kde-cli-tools               // TODO: Does this solve Dolphin Open With?
 kwallet
 kwallet-pam
 kwalletmanager
@@ -41,6 +44,7 @@ neofetch
 otf-font-awesome
 playerctl
 qt6ct
+smile
 tlp
 tlpui
 ttf-font-awesome
@@ -51,6 +55,7 @@ waybar
 wlr-randr
 wofi
 xdg-desktop-portal
+xdg-desktop-portal-hyprland
 ```
 
 **Packages specific to my use case (programming, music production, ...):**
@@ -58,6 +63,7 @@ xdg-desktop-portal
 bitwig-studio
 cmake
 discord
+docker
 easyeffects
 eslint
 gimp
@@ -68,6 +74,7 @@ lsp-plugins
 nextcloud-client
 nodejs
 npm
+npm-check-updates
 spotify-launcher
 steam
 thunderbird
@@ -143,6 +150,10 @@ xdg-settings set default-web-browser librewolf.desktop
 &nbsp;
 
 ### Misc
+**Fix Dolphin 'Open With' being empty:**  
+Run `XDG_MENU_PREFIX=arch- kbuildsycoca6` and pray (optional)?  
+I'm not 100% sure if this fixes it permanently.
+
 **Add user group for non-root USB access:** (needed for PlatformIO Arduino Development)  
 `sudo usermod -a -G uucp $USER`
 
@@ -169,3 +180,9 @@ Create mount point:
 
 Run `sudo nano /etc/fstab` and add (replace IP and username with your values):  
 `192.168.x.x:/mnt/data/username /mnt/TrueNAS nfs defaults,noauto,user 0 0`
+
+&nbsp;
+
+**Docker:**  
+Start daemon: `sudo systemctl enable --now docker`  
+Add yourself to group to use docker without sudo: `sudo usermod -a -G docker $USER`
