@@ -58,7 +58,8 @@
     "custom/vpn": {
       "format": " {}",
       "interval": 2,
-      "exec": "nmcli --get-values ACTIVE,NAME,TYPE connection show | grep '^yes:.*:vpn$' | sed -e 's/yes://' -e 's/:vpn$//'"
+      "exec": "nmcli --get-values ACTIVE,NAME,TYPE connection show | grep '^yes:.*:vpn$' | sed -e 's/yes://' -e 's/:vpn$//'",
+      "on-click": "exec hyprctl dispatch exec [floating] 'alacritty -e bash -c \"echo -n \\\"Public IP: \\\" && curl icanhazip.com ; echo \\\"\\\" ; read -p \\\"Press key to exit...\\\" </dev/tty\" '"
     },
     "network": {
       "interface": "wlan0",
