@@ -47,7 +47,8 @@
 #backlight,
 #battery,
 #bluetooth,
-#network {
+#network,
+#custom-vpn {
   padding: 4px 8px;
   background-color: #303643;
   border-radius: 30px;
@@ -79,6 +80,7 @@
   color: #e5c07b;
 }
 
+#custom-vpn,
 #network {
   color: #c678dd;
 }

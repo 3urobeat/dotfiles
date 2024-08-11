@@ -11,6 +11,7 @@
       "hyprland/window"
     ],
     "modules-right": [
+      "custom/vpn",
       "network",
       "bluetooth",
       "cpu",
@@ -53,6 +54,11 @@
         "active": "",
         "default": ""
       }
+    },
+    "custom/vpn": {
+      "format": " {}",
+      "interval": 2,
+      "exec": "nmcli --get-values ACTIVE,NAME,TYPE connection show | grep '^yes:.*:vpn$' | sed -e 's/yes://' -e 's/:vpn$//'"
     },
     "network": {
       "interface": "wlan0",

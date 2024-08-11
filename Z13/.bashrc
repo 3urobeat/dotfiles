@@ -8,6 +8,9 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
+# Fix Alacritty not working correctly in some ssh sessions
+alias ssh="TERM=xterm-256color $(which ssh)"
+
 # Env vars for theming and stuff
 export QT_QPA_PLATFORM="wayland"
 export QT_QPA_PLATFORMTHEME="qt6ct"
