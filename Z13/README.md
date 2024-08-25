@@ -75,6 +75,8 @@ nextcloud-client
 nodejs
 npm
 npm-check-updates
+neovim
+
 spotify-launcher
 steam
 thunderbird
