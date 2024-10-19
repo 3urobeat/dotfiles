@@ -20,6 +20,7 @@ btop
 cliphist
 dolphin
 dunst
+fastfetch
 flameshot-git
 fprintd
 grim
@@ -30,6 +31,7 @@ hyprcursor
 hypridle
 hyprland
 hyprlock
+hyprpaper
 kate
 kde-cli-tools               // TODO: Does this solve Dolphin Open With?
 kwallet
@@ -40,7 +42,6 @@ lib32-vulkan-radeon
 libappindicator-gtk3
 libreoffice-fresh
 librewolf-bin
-neofetch
 otf-font-awesome
 playerctl
 qt6ct
