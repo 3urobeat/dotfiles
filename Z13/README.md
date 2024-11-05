@@ -71,7 +71,8 @@ gimp
 github-desktop-bin
 google-chrome
 kdenlive
-lsp-plugins
+lsp-plugins-lv2
+lsp-plugins-vst
 nextcloud-client
 nodejs
 npm
