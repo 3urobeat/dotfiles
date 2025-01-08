@@ -21,5 +21,6 @@ PS1="\[\033[1;96m\][\[\033[1;95m\]\u\[\033[1;36m\]@\[\033[1;95m\]\h\[\033[1;96m\
 
 # Set terminal language to english
 LANG=en_US.UTF-8
+LANGUAGE=en_US.UTF-8
 
 PATH=~/.console-ninja/.bin:$PATH

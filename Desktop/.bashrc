@@ -6,9 +6,17 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
-alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
+alias grep='grep --color=auto'
 
+# Env vars for theming and stuff
+export QT_QPA_PLATFORM="wayland"
 
-# add some color :D
+# Add some color
 PS1="\[\033[1;96m\][\[\033[1;95m\]\u\[\033[1;36m\]@\[\033[1;95m\]\h\[\033[1;96m\\] \[\033[1;36m\]\w\[\033[1;96m\]]\[\033[1;96m\]$\[\033[0m\] "
+
+# Set terminal language to english
+LANG=en_US.UTF-8
+LANGUAGE=en_US.UTF-8
+
+# Fix 'unknown terminal: alacritty' in ssh sessions
+alias ssh="TERM=xterm-256color $(which ssh)"

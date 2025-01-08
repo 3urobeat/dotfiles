@@ -10,4 +10,7 @@ columns = 97
 lines = 23
 
 [font]
-size = 10
+size = 8.5
+
+[env]
+term = "xterm-256color"
