@@ -15,6 +15,7 @@ archlinux-xdg-menu          // Probably needed for Dolphin Open With
 ark
 blueman
 breeze
+breezex-cursor-theme
 brightnessctl
 btop
 cliphist
