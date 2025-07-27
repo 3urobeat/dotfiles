@@ -2,7 +2,7 @@ term=alacritty
 location=top
 yoffset=180
 width=25%
-lines=12
+height=500
 
 prompt=where goin??
 show=drun
