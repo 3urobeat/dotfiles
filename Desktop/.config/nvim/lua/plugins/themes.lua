@@ -6,5 +6,6 @@ return {
         dependencies = { 'rktjmp/lush.nvim' },
     },
 
+    "catppuccin/nvim",
     'shaunsingh/solarized.nvim',
 }

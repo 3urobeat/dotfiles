@@ -4,7 +4,7 @@
         "equalizer#0": {
             "balance": 0.0,
             "bypass": false,
-            "input-gain": -5.0,
+            "input-gain": 0.0,
             "left": {
                 "band0": {
                     "frequency": 20.0,
@@ -14,7 +14,8 @@
                     "q": 0.8,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band1": {
                     "frequency": 55.0,
@@ -24,7 +25,8 @@
                     "q": 0.6,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band2": {
                     "frequency": 105.0,
@@ -34,7 +36,8 @@
                     "q": 0.71,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Lo-shelf",
+                    "width": 4.0
                 },
                 "band3": {
                     "frequency": 210.0,
@@ -44,7 +47,8 @@
                     "q": 0.6,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band4": {
                     "frequency": 800.0,
@@ -54,7 +58,8 @@
                     "q": 1.5,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band5": {
                     "frequency": 2050.0,
@@ -64,7 +69,8 @@
                     "q": 3.0,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band6": {
                     "frequency": 7400.0,
@@ -74,7 +80,8 @@
                     "q": 4.0,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band7": {
                     "frequency": 8200.0,
@@ -84,7 +91,8 @@
                     "q": 5.0,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band8": {
                     "frequency": 11000.0,
@@ -94,12 +102,13 @@
                     "q": 0.71,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Hi-shelf",
+                    "width": 4.0
                 }
             },
             "mode": "IIR",
             "num-bands": 9,
-            "output-gain": -5.0,
+            "output-gain": -4.0,
             "pitch-left": 0.0,
             "pitch-right": 0.0,
             "right": {
@@ -111,7 +120,8 @@
                     "q": 0.8,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band1": {
                     "frequency": 55.0,
@@ -121,7 +131,8 @@
                     "q": 0.6,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band2": {
                     "frequency": 105.0,
@@ -131,7 +142,8 @@
                     "q": 0.71,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Lo-shelf"
+                    "type": "Lo-shelf",
+                    "width": 4.0
                 },
                 "band3": {
                     "frequency": 210.0,
@@ -141,7 +153,8 @@
                     "q": 0.6,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band4": {
                     "frequency": 800.0,
@@ -151,7 +164,8 @@
                     "q": 1.5,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band5": {
                     "frequency": 2050.0,
@@ -161,7 +175,8 @@
                     "q": 3.0,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band6": {
                     "frequency": 7400.0,
@@ -171,7 +186,8 @@
                     "q": 4.0,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band7": {
                     "frequency": 8200.0,
@@ -181,7 +197,8 @@
                     "q": 5.0,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band8": {
                     "frequency": 11000.0,
@@ -191,7 +208,8 @@
                     "q": 0.71,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Hi-shelf"
+                    "type": "Hi-shelf",
+                    "width": 4.0
                 }
             },
             "split-channels": false

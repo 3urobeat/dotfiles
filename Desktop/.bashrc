@@ -18,5 +18,7 @@ PS1="\[\033[1;96m\][\[\033[1;95m\]\u\[\033[1;36m\]@\[\033[1;95m\]\h\[\033[1;96m\
 LANG=en_US.UTF-8
 LANGUAGE=en_US.UTF-8
 
+PATH=~/.console-ninja/.bin:$PATH
+
 # Fix 'unknown terminal: alacritty' in ssh sessions
 alias ssh="TERM=xterm-256color $(which ssh)"

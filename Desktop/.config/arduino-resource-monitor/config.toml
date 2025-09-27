@@ -1,0 +1,15 @@
+[general]
+createdWithVersion = "v0.7.0"
+
+[timeouts]
+arduinoReplyTimeout = 5000
+connectionRetryTimeout = 5000
+connectionRetryAmount = 10
+connectionRetryMultiplier = 0.5
+
+[sensors]
+gpuType = "amd"
+cpuTempSensorPath = ""
+gpuLoadSensorPath = "/sys/class/hwmon/hwmon6/device/gpu_busy_percent"
+gpuTempSensorPath = "/sys/class/hwmon/hwmon6/temp1_input"
+checkInterval = 1000

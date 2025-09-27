@@ -135,7 +135,8 @@ return {
             -- But for many setups, the LSP (`tsserver`) will work just fine
             -- tsserver = {},
             --
-            als = {},
+
+            -- als = {},
             arduino_language_server = {},
             ast_grep = {},
             bashls = {},
@@ -146,7 +147,7 @@ return {
             html = {},
             cssls = {},
             tailwindcss = {},
-            tsserver = {},
+            -- tsserver = {},
             standardjs = {},
 
             lua_ls = {

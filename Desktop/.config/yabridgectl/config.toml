@@ -1,0 +1,11 @@
+plugin_dirs = [
+    '/home/tomke/.wine/drive_c/Program Files/Common Files/VST3',
+    '/home/tomke/.wine/drive_c/Program Files (x86)/Steinberg/Vstplugins',
+]
+vst2_location = 'centralized'
+no_verify = false
+blacklist = []
+
+[last_known_config]
+wine_version = 'wine-10.13 (Staging)'
+yabridge_host_hash = 7510461430936496239

@@ -1,0 +1,221 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[1]
+Description=Steam auf Arbeitsfläche 1
+above=true
+clientmachine=localhost
+desktops=bb5b6610-9be8-454a-90f3-209dbdf455db
+desktopsrule=3
+minimize=true
+position=3392,1109
+title=Picture-in-Picture
+wmclass=steamwebhelper steam
+wmclasscomplete=true
+wmclassmatch=1
+
+[1dfeba72-b627-4d10-85fb-27391d007e8c]
+Description=GitHub Desktop auf Programmieren Arbeitsfläche
+clientmachine=localhost
+desktops=7823178b-34a9-4f0e-8b88-7c75d27f43e3
+desktopsrule=3
+wmclass=github desktop GitHub Desktop
+wmclasscomplete=true
+wmclassmatch=1
+
+[2]
+Description=Thunderbird minimiert starten
+above=true
+clientmachine=localhost
+desktops=\\0
+desktopsrule=3
+minimize=true
+minimizerule=3
+position=3392,1109
+screen=3
+screenrule=3
+title=Picture-in-Picture
+wmclass=thunderbird
+wmclassmatch=1
+
+[3]
+Description=Bitwig auf Musik Arbeitsfläche und Größe
+clientmachine=localhost
+desktops=a0b6f203-727f-4e6d-b8e7-e6d4986d8822
+desktopsrule=3
+positionrule=3
+sizerule=3
+title=Picture-in-Picture
+wmclass=com.bitwig.BitwigStudio
+wmclassmatch=1
+
+[3ba574ab-ee6a-4e5f-a1d4-191024cee9a0]
+Description=Toepassingsinstellingen voor org.kde.dolphin
+desktops=\\0
+desktopsrule=3
+wmclass=dolphin org.kde.dolphin
+wmclasscomplete=true
+wmclassmatch=1
+
+[4]
+Description=GitHub Desktop auf Programmieren Arbeitsfläche
+above=true
+clientmachine=localhost
+desktops=7823178b-34a9-4f0e-8b88-7c75d27f43e3
+desktopsrule=3
+minimize=true
+position=3392,1109
+title=Picture-in-Picture
+wmclass=github desktop GitHub Desktop
+wmclasscomplete=true
+wmclassmatch=1
+
+[487ca54a-cc8f-45b1-807e-f29d65f91a74]
+Description=Discord auf allen Arbeitsflächen
+clientmachine=localhost
+desktops=\\0
+desktopsrule=3
+wmclass=discord
+wmclassmatch=1
+
+[5]
+Description=Programm-Einstellungen für VSCodium
+above=true
+clientmachine=localhost
+desktops=7823178b-34a9-4f0e-8b88-7c75d27f43e3
+desktopsrule=3
+minimize=true
+position=3392,1109
+title=Picture-in-Picture
+wmclass=vscodium VSCodium
+wmclasscomplete=true
+wmclassmatch=1
+
+[7]
+Description=Discord auf allen Arbeitsflächen
+above=true
+clientmachine=localhost
+desktops=\\0
+desktopsrule=3
+position=3392,1070
+screen=3
+screenrule=3
+title=Picture-in-Picture
+wmclass=discord-canary
+wmclassmatch=1
+
+[710ae988-da79-402e-ac17-4f359b4f49f4]
+Description=Steam auf Arbeitsfläche 1
+clientmachine=localhost
+desktops=bb5b6610-9be8-454a-90f3-209dbdf455db
+desktopsrule=3
+wmclass=steamwebhelper steam
+wmclasscomplete=true
+wmclassmatch=1
+
+[8]
+Description=Spotify auf allen Arbeitsflächen
+above=true
+clientmachine=localhost
+desktops=\\0
+desktopsrule=3
+position=3392,1070
+title=Picture-in-Picture
+wmclass=spotify Spotify
+wmclasscomplete=true
+wmclassmatch=1
+
+[8818c5a9-f836-4cd4-aefc-d03f855042a7]
+Description=Bitwig auf Musik Arbeitsfläche
+clientmachine=localhost
+desktops=a0b6f203-727f-4e6d-b8e7-e6d4986d8822
+desktopsrule=3
+wmclass=com.bitwig.BitwigStudio
+wmclassmatch=1
+
+[9]
+Description=Librewolf PiP enable 'Keep above other windows' and set default position
+above=true
+aboverule=3
+desktops=\\0
+desktopsrule=3
+title=Picture-in-Picture
+titlematch=1
+types=1
+wmclass=librewolf
+wmclassmatch=1
+
+[9062f1c8-5022-40a7-b076-6c6d4c9e8789]
+Description=Programm-Einstellungen für com.obsproject.Studio
+desktops=\\0
+desktopsrule=3
+wmclass=obs com.obsproject.Studio
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=12
+rules=beee59eb-a8c9-447a-8821-ad3b43d70a55,3ba574ab-ee6a-4e5f-a1d4-191024cee9a0,fc2dbf72-54e5-4c1b-a945-70d931c5de55,9062f1c8-5022-40a7-b076-6c6d4c9e8789,1,2,3,4,5,7,8,9
+
+[a4402b0b-6267-4ce3-a341-277c55e4cc7b]
+Description=Thunderbird minimiert starten
+minimize=true
+minimizerule=3
+wmclass=thunderbird
+wmclassmatch=1
+
+[b70045ee-90c1-4d78-a00f-dd523e8f390d]
+Description=Spotify auf allen Arbeitsflächen
+clientmachine=localhost
+desktops=\\0
+desktopsrule=3
+wmclass=spotify Spotify
+wmclasscomplete=true
+wmclassmatch=1
+
+[bd5a0290-2f0a-43e0-8247-e2d88846faf1]
+Description=Thunderbird minimiert starten
+minimize=true
+minimizerule=3
+wmclass=thunderbird
+wmclassmatch=1
+
+[beee59eb-a8c9-447a-8821-ad3b43d70a55]
+Description=Toepassingsinstellingen voor obsidian
+clientmachine=localhost
+desktops=\\0
+desktopsrule=3
+wmclass=obsidian
+wmclassmatch=1
+
+[d51b209f-7375-46fd-a53c-c4878c670530]
+Description=Librewolf PiP Enable Keep above other windows
+above=true
+aboverule=3
+title=Picture-in-Picture
+titlematch=1
+types=1
+wmclass=librewolf LibreWolf
+wmclasscomplete=true
+wmclassmatch=1
+
+[de6728ec-606e-40e4-87f0-54dbae6b78c5]
+Description=Programm-Einstellungen für VSCodium
+clientmachine=localhost
+desktops=7823178b-34a9-4f0e-8b88-7c75d27f43e3
+desktopsrule=3
+wmclass=vscodium VSCodium
+wmclasscomplete=true
+wmclassmatch=1
+
+[dfde9cd7-c31d-439a-b3f9-f5b558575fb5]
+Description=Neue Fenstereinstellungen
+sizerule=4
+
+[fc2dbf72-54e5-4c1b-a945-70d931c5de55]
+Description=Programm-Einstellungen für vlc
+clientmachine=localhost
+desktops=\\0
+desktopsrule=3
+wmclass=vlc
+wmclassmatch=1

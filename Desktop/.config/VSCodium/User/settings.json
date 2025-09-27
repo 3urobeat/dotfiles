@@ -86,5 +86,13 @@
         "files.trimTrailingWhitespace": false
     },
     "cmake.showOptionsMovedNotification": false,
-    "tabby.api.endpoint": "http://127.0.0.1:7550"
+    "ada.projectFile": "ada_output_logger.gpr",
+    "explorer.confirmDelete": false,
+    "window.titleBarStyle": "native",
+    "window.commandCenter": false,
+    "chat.commandCenter.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "cmake.showConfigureWithDebuggerNotification": false,
+    "workbench.colorTheme": "Bluloco Dark",
+    "C_Cpp.intelliSenseEngine": "disabled"
 }

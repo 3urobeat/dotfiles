@@ -1,0 +1,61 @@
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+
+[Baloo KEditCommentDialog]
+3 screens: Height=250
+3 screens: Width=276
+
+[CreateDialog]
+LastMimeType=application/x-7z-compressed
+
+[DetailsMode]
+PreviewSize=22
+
+[ExtractDialog]
+3 screens: Height=540
+3 screens: Width=1184
+
+[General]
+DoubleClickViewAction=none
+GlobalViewProps=false
+ShowFullPath=true
+ShowStatusBar=FullWidth
+Version=202
+ViewPropsTimestamp=2023,2,23,18,58,57.299
+
+[IconsMode]
+IconSize=64
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[KPropertiesDialog]
+2 screens: Height=464
+2 screens: Width=377
+3 screens: Height=616
+3 screens: Width=635
+4 screens: Height=464
+4 screens: Width=398
+DP-1 DP-3 HDMI-A-1 Height 1920x1080 HDMI-A-1=458
+DP-1 DP-3 HDMI-A-1 Height 2560x1440 DP-1=504
+DP-1 DP-3 HDMI-A-1 Width 1920x1080 HDMI-A-1=436
+DP-1 DP-3 HDMI-A-1 Width 2560x1440 DP-1=635
+DP-1 DP-3 Height 2560x1440 DP-1=504
+DP-1 DP-3 Width 2560x1440 DP-1=635
+DP-1 HDMI-A-1 DP-3 Height 2560x1440 DP-1=504
+DP-1 HDMI-A-1 DP-3 Width 2560x1440 DP-1=635
+HDMI-A-1 DP-1 DP-3 Height 1920x1080 HDMI-A-1=444
+HDMI-A-1 DP-1 DP-3 Width 1920x1080 HDMI-A-1=405
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=imagethumbnail,windowsimagethumbnail,appimagethumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,audiothumbnail,jpegthumbnail,opendocumentthumbnail,kraorathumbnail,fontthumbnail,directorythumbnail,mltpreview,comicbookthumbnail,svgthumbnail,windowsexethumbnail
+
+[ViewPropertiesDialog]
+3 screens: Height=714
+3 screens: Width=444
+DP-1 DP-3 HDMI-A-1 Height 2560x1440 DP-1=464
+DP-1 DP-3 HDMI-A-1 Width 2560x1440 DP-1=488
